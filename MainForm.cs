@@ -74,9 +74,11 @@ namespace WinTG
 
             List<Scene> tempScenes = new List<Scene>();
             JObject jscenes = JObject.Parse(File.ReadAllText(projectFilename));
-            foreach(var jscene in jscenes)
+            foreach (var jscene in jscenes["scenes"])
             {
-
+                var scene = 
+                var s = jscene["name"];
+                    var scene = new Scene(projectFilename, jscene["name"], )
             }
 
             return true;
